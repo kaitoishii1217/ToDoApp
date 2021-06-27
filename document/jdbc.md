@@ -10,13 +10,22 @@
 　「参照ライブラリー」内にJARファイルが追加されていることを確認する。  
 　
 ### JDBCの使い方
-1. データベースの接続
+1. 必要情報を定数定義しておく  
+```
+// 例
+private static final String DB_PATH = "データベースURL";
+private static final String DB_USER_NAME = "ユーザー名";
+private static final String DB_PASSWORD = "パスワード";
+private static final String DB_INSERT_SQL = "インサート用SQL文";
+```
+
+2. データベースの接続
 ・まずはデータベースに接続し、Connectionクラスのオブジェクトを取得する。
 ```
 Connection connection = DriverManager.getConnection(DBのPath, ユーザー名, パスワード);
 ```
 
-2. SQL発行の準備
+3. SQL発行の準備
 DB接続処理にPreparedStatementクラスを使用する方が安全で且つ処理も速いみたい。  
 ・PreparedStatementクラスを使用するメリット  
   ・文字列連結でSQL文を作成しない為、SQLインジェクション対策になる。
@@ -38,7 +47,7 @@ DB接続処理にPreparedStatementクラスを使用する方が安全で且つ�
   ResultSet resultSet = statement.executeQuery(SQL文字列);
   ```
   
-3. 例外処理
+4. 例外処理
 ・DB接続中にエラーが発生した場合の例外処理を書く。
  finally（絶対に実行したい処理記載箇所）を使用し、成功時でも失敗時でも後片付けを行うようにしておく。
   ```
