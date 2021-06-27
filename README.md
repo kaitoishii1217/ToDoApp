@@ -16,6 +16,7 @@
 ## 作成した資料や開発で参考にした情報
 - [情報ページ](./document/document_top.md)
 - [MySQL調査結果](./document/mysql.md)
+- [JDBC使用方法調査結果](./document/jdbc.md)
 
 ## 実績
 1. 6/2 タスク分解（FS）
