@@ -5,4 +5,4 @@
 * ファイル書き込みを利用したTODOアプリをJavaで作っている。TODOアプリ作成の参考情報。  
 
 ### JDBC
-[JDBC使用方法調査結果]()
+[JDBC使用方法調査結果](./document/jdbc.md)
