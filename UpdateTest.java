@@ -4,7 +4,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.Scanner;
 
-public class Updatetest{
+public class UpdateTest{
 	
 	private static final String dr = "com.mysql.cj.jdbc.Driver";
 	private static final String path = "jdbc:mysql://localhost/testdb";
@@ -114,7 +114,7 @@ private void updatetodo(){
 }
 
  public static void main(String[] args){
-	Updatetest ut=new Updatetest();
+	UpdateTest ut=new UpdateTest();
 	System.out.println("---更新前ToDoリスト---");
 	ut.selecttodo();
 	ut.updatetodo();
