@@ -11,21 +11,21 @@ public class DeleteTest{
 	private static final String user ="root";
 	private static final String pass ="root";
 	private String selsql = "SELECT seq,todo,enddate,priority from todolist;";
-    private String delsql = "DELETE from todolist where seq = (?);";
+	private String delsql = "DELETE from todolist where seq = (?);";
 	
-    private Connection con = null;
-    private PreparedStatement st = null;
-    private ResultSet rs = null;
-    private Scanner sc = null;
+	private Connection con = null;
+	private PreparedStatement st = null;
+	private ResultSet rs = null;
+	private Scanner sc = null;
     
-    public static void main(String[] args) {
-    	DeleteTest dt = new DeleteTest();
-    	System.out.println("---削除前ToDoリスト---");
-    	dt.selecttodo();
-    	dt.deletetodo();
-    	System.out.println("---削除後ToDoリスト---");
-    	dt.selecttodo();
-    }
+	public static void main(String[] args) {
+		DeleteTest dt = new DeleteTest();
+		System.out.println("---削除前ToDoリスト---");
+		dt.selecttodo();
+		dt.deletetodo();
+		System.out.println("---削除後ToDoリスト---");
+		dt.selecttodo();
+	}
     
     private void selecttodo() {
     	try {
