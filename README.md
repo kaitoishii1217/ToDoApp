@@ -16,7 +16,7 @@
 ## クラス図
 
 ## ER図
-![TodoアプリER図](./image/TodoアプリER図.png)
+![TodoアプリER図](https://user-images.githubusercontent.com/54917545/125075818-12fdc980-e0fa-11eb-93c4-6cc9e5d11227.png)
 
 ## 作成した資料や開発で参考にした情報
 - [情報ページ](./document/document_top.md)
