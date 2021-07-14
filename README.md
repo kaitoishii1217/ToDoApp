@@ -14,6 +14,7 @@
 - TODOの削除
 
 ## クラス図
+![クラス図_20210709修正](https://user-images.githubusercontent.com/54917545/125637852-ece6e352-4693-4d58-ab4b-9c54fdae69dc.png)
 
 ## ER図
 ![TodoアプリER図](https://user-images.githubusercontent.com/54917545/125075818-12fdc980-e0fa-11eb-93c4-6cc9e5d11227.png)
